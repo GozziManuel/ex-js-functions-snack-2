@@ -76,3 +76,22 @@ setTimeout(() => clearInterval(interval), fine \* 1000);
 stampaOgniSecondo(112);
 
 ---
+
+// snack 7
+function eseguiEferma(mess, intervallo, fine) {
+const interval = setInterval(() => console.log(mess), intervallo _ 1000);
+setTimeout(() => clearInterval(interval), fine _ 1000);
+}
+eseguiEferma("ciao", 1, 5);
+
+---
+
+// snack 8
+function contoAllaRovescia(numero) {
+let contatore = numero + 1;
+const interval = setInterval(() => {
+(contatore--, console.log(contatore));
+}, 1000);
+}
+
+---
