@@ -55,3 +55,24 @@ const handleText = creatimer();
 handleText("Tempo Scaduto!");
 
 ---
+
+// snack 5
+function stampaOgniSeconda(text) {
+const interval = setInterval(() => console.log(text), 1000);
+setTimeout(() => clearInterval(interval), 12000);
+}
+stampaOgniSeconda("prova!");
+
+---
+
+// snack 6
+function stampaOgniSecondo(fine) {
+let contatore = 0;
+const interval = setInterval(() => {
+(contatore++, console.log(contatore));
+}, 1000);
+setTimeout(() => clearInterval(interval), fine \* 1000);
+}
+stampaOgniSecondo(112);
+
+---
