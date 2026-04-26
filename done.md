@@ -95,3 +95,22 @@ const interval = setInterval(() => {
 }
 
 ---
+
+// snack 9
+
+function sequenzaOperazioni(array, interval) {
+array.forEach((element, index) => {
+setTimeout(() => element(), interval \* index);
+});
+}
+
+sequenzaOperazioni(
+[
+() => console.log("Operazione 1"),
+() => console.log("Operazione 2"),
+() => console.log("Operazione 3"),
+],
+2000,
+);
+
+---
